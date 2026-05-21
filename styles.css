@@ -271,18 +271,27 @@ h3 {
 }
 
 .statement {
-  padding: clamp(64px, 9vw, 120px) 0;
+  padding: clamp(56px, 8vw, 104px) 0;
   background: var(--pine);
 }
 
-.statement p {
+.statement-inner {
   width: min(100% - 48px, 980px);
   margin: 0 auto;
+}
+
+.statement .eyebrow {
+  color: var(--leaf);
+}
+
+.statement p:not(.eyebrow) {
+  max-width: 760px;
+  margin-bottom: 0;
   color: var(--white);
-  font-size: clamp(2rem, 5vw, 5.4rem);
-  font-weight: 720;
+  font-size: clamp(1.45rem, 2.9vw, 2.55rem);
+  font-weight: 650;
   letter-spacing: 0;
-  line-height: 1.02;
+  line-height: 1.18;
 }
 
 .split-section,
@@ -607,7 +616,7 @@ h3 {
     aspect-ratio: 16 / 10;
   }
 
-  .statement p,
+  .statement-inner,
   .split-section,
   .services-section,
   .team-section,
