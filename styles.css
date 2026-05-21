@@ -303,6 +303,15 @@ h3 {
   margin: 0 auto;
 }
 
+.statement,
+.split-section,
+.services-section,
+.team-section,
+.partners-section,
+.contact-section {
+  scroll-margin-top: 92px;
+}
+
 .split-section {
   display: grid;
   grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
@@ -598,6 +607,15 @@ h3 {
     align-items: flex-start;
     flex-direction: column;
     width: min(100% - 32px, 1180px);
+  }
+
+  .statement,
+  .split-section,
+  .services-section,
+  .team-section,
+  .partners-section,
+  .contact-section {
+    scroll-margin-top: 178px;
   }
 
   .hero,
