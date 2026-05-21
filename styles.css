@@ -251,6 +251,7 @@ h3 {
 .split-section,
 .services-section,
 .team-section,
+.partners-section,
 .contact-section {
   width: min(100% - 48px, 1180px);
   margin: 0 auto;
@@ -344,18 +345,14 @@ h3 {
   box-shadow: 0 18px 42px rgba(21, 51, 30, 0.1);
 }
 
-.profile-avatar {
-  display: grid;
-  place-items: center;
+.profile-photo {
+  display: block;
   width: 112px;
   height: 112px;
   margin-bottom: 28px;
   border: 3px solid var(--white);
   border-radius: 999px;
-  color: var(--forest);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2rem;
-  font-weight: 700;
+  object-fit: cover;
   background: var(--stone);
   box-shadow: 0 0 0 1px rgba(21, 51, 30, 0.16);
 }
@@ -384,6 +381,117 @@ h3 {
   font-size: 1.05rem;
   font-weight: 560;
   line-height: 1.65;
+}
+
+.partners-section {
+  padding: clamp(68px, 10vw, 122px) 0;
+  border-top: 1px solid var(--line);
+}
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.partner-card {
+  display: flex;
+  min-height: 168px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  color: var(--pine);
+  text-align: center;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.78);
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(71, 123, 53, 0.42);
+  box-shadow: 0 18px 42px rgba(21, 51, 30, 0.1);
+}
+
+.partner-card span {
+  display: block;
+  font-size: clamp(1.12rem, 2vw, 1.45rem);
+  font-weight: 820;
+  line-height: 1.18;
+}
+
+.partner-card small {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 760;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.partner-sdia::before {
+  width: 74px;
+  height: 38px;
+  content: "";
+  background:
+    linear-gradient(90deg, #005eb8 0 42%, #ffcc00 42% 58%, #005eb8 58% 100%);
+  clip-path: polygon(0 24%, 68% 0, 100% 12%, 38% 100%);
+}
+
+.partner-strawberry::before {
+  width: 76px;
+  height: 76px;
+  content: "";
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 17%, #050505 0 7%, transparent 8%),
+    radial-gradient(circle at 68% 24%, #050505 0 7%, transparent 8%),
+    radial-gradient(circle at 79% 42%, #050505 0 7%, transparent 8%),
+    radial-gradient(circle at 68% 62%, #050505 0 7%, transparent 8%),
+    radial-gradient(circle at 50% 73%, #050505 0 7%, transparent 8%),
+    radial-gradient(circle at 31% 62%, #050505 0 7%, transparent 8%),
+    radial-gradient(circle at 20% 42%, #050505 0 7%, transparent 8%),
+    radial-gradient(circle at 31% 24%, #050505 0 7%, transparent 8%),
+    radial-gradient(circle at 50% 50%, #ffc1a8 0 13%, transparent 14%);
+}
+
+.partner-rutgersson {
+  background: linear-gradient(180deg, rgba(88, 157, 199, 0.92), rgba(88, 157, 199, 0.72));
+}
+
+.partner-rutgersson span {
+  color: #c64517;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.8rem, 3vw, 2.55rem);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.partner-rutgersson small {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.partner-calentix::before {
+  width: 58px;
+  height: 42px;
+  content: "";
+  background:
+    linear-gradient(#1399cf 0 0) 0 2px / 42px 7px,
+    linear-gradient(#1399cf 0 0) 0 17px / 42px 7px,
+    linear-gradient(#1399cf 0 0) 0 32px / 42px 7px,
+    linear-gradient(#ef3f35 0 0) 38px 2px / 20px 7px,
+    linear-gradient(#ef3f35 0 0) 38px 17px / 20px 7px,
+    linear-gradient(#ef3f35 0 0) 38px 32px / 20px 7px;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+}
+
+.partner-calentix span {
+  color: #24303a;
+  font-size: clamp(1.45rem, 2.5vw, 2.1rem);
 }
 
 .contact-section {
@@ -450,6 +558,7 @@ h3 {
   .split-section,
   .services-section,
   .team-section,
+  .partners-section,
   .contact-section {
     width: min(100% - 32px, 1180px);
   }
@@ -460,6 +569,10 @@ h3 {
 
   .profile-grid {
     grid-template-columns: 1fr;
+  }
+
+  .partner-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -504,9 +617,12 @@ h3 {
     min-height: auto;
   }
 
-  .profile-avatar {
+  .profile-photo {
     width: 92px;
     height: 92px;
-    font-size: 1.6rem;
+  }
+
+  .partner-grid {
+    grid-template-columns: 1fr;
   }
 }
