@@ -1,6 +1,6 @@
-# Folkerman
+# Folkerman | renewables
 
-Ny hemsida for Folkerman.
+Ny hemsida for Folkerman renewables.
 
 ## Publicering
 

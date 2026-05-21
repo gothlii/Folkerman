@@ -1,20 +1,131 @@
 <!doctype html>
-<html lang="sv">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Folkerman - ny hemsida under uppbyggnad.">
-    <title>Folkerman</title>
+    <meta
+      name="description"
+      content="Folkerman renewables supports renewable energy projects with land, permitting, commercial, and development expertise."
+    >
+    <title>Folkerman | renewables</title>
+    <link rel="preload" href="./assets/renewables-hero.jpg" as="image">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <main class="site-shell">
-      <section class="hero" aria-labelledby="page-title">
-        <p class="eyebrow">Ny hemsida</p>
-        <h1 id="page-title">Folkerman</h1>
-        <p class="intro">
-          Hemsidan ar under uppbyggnad. Innehall, bilder och funktioner fylls pa har nar de ar klara.
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Folkerman renewables home">
+        <span class="brand-main">Folkerman</span>
+        <span class="brand-divider">|</span>
+        <span class="brand-sub">renewables</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#approach">Approach</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Renewable energy development</p>
+          <h1 id="hero-title">Turning land potential into renewable energy value.</h1>
+          <p class="hero-text">
+            Folkerman renewables works across the early stages of clean energy projects, connecting land,
+            planning, local insight, and commercial structure.
+          </p>
+          <div class="hero-actions" aria-label="Hero actions">
+            <a class="button primary" href="#contact">Start a conversation</a>
+            <a class="button secondary" href="#services">Explore services</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img
+            src="./assets/renewables-hero.jpg"
+            alt="Nordic renewable energy landscape with solar panels and open fields"
+          >
+        </figure>
+      </section>
+
+      <section class="statement" aria-label="Company statement">
+        <p>
+          We help renewable projects move from opportunity to bankable direction with disciplined site
+          evaluation, practical stakeholder work, and clear commercial judgement.
         </p>
+      </section>
+
+      <section class="split-section" id="approach" aria-labelledby="approach-title">
+        <div>
+          <p class="eyebrow">Approach</p>
+          <h2 id="approach-title">Grounded development for long-lived assets.</h2>
+        </div>
+        <div class="approach-list">
+          <article>
+            <span>01</span>
+            <h3>Read the land</h3>
+            <p>
+              Identify constraints, grid context, ownership patterns, planning realities, and the
+              practical conditions that shape project viability.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Build alignment</h3>
+            <p>
+              Structure conversations with landowners, municipalities, technical partners, and investors
+              so decisions are made on solid information.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Create momentum</h3>
+            <p>
+              Move opportunities through the first commercial and development gates with a clear path,
+              realistic risk view, and clean handover material.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="services-section" id="services" aria-labelledby="services-title">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2 id="services-title">Support across the renewable project lifecycle.</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Site origination</h3>
+            <p>Mapping land opportunities and screening sites for renewable energy potential.</p>
+          </article>
+          <article class="service-card">
+            <h3>Landowner dialogue</h3>
+            <p>Practical support for early conversations, agreements, and expectation setting.</p>
+          </article>
+          <article class="service-card">
+            <h3>Permitting readiness</h3>
+            <p>Early assessment of planning, environmental, and local conditions before deeper spend.</p>
+          </article>
+          <article class="service-card">
+            <h3>Commercial structuring</h3>
+            <p>Development logic, partner interfaces, risk framing, and investor-ready project material.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Folkerman | renewables</h2>
+          <p class="contact-copy">
+            For land opportunities, renewable project development, or commercial partnerships, get in touch.
+          </p>
+        </div>
+        <address class="contact-details">
+          <span>Sonja Kovalevskys gata 3</span>
+          <span>113 65 Stockholm</span>
+          <span>Sweden</span>
+          <a href="tel:+46737558182">+46 73 755 81 82</a>
+        </address>
       </section>
     </main>
   </body>
