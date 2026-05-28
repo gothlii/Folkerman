@@ -27,7 +27,7 @@
       data-i18n-attr="content:meta.ogDescription"
     >
     <meta property="og:url" content="https://www.folkermanrenewables.se/">
-    <meta property="og:image" content="https://www.folkermanrenewables.se/assets/industry-renewables-hero.jpg">
+    <meta property="og:image" content="https://www.folkermanrenewables.se/assets/folkerman-generated-hero.jpg">
     <meta property="og:locale" content="sv_SE">
     <meta property="og:locale:alternate" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
@@ -37,12 +37,12 @@
       content="Projektutveckling med mark, el och genomförbarhet i fokus för förnybar energi och elintensiv industri."
       data-i18n-attr="content:meta.ogDescription"
     >
-    <meta name="twitter:image" content="https://www.folkermanrenewables.se/assets/industry-renewables-hero.jpg">
+    <meta name="twitter:image" content="https://www.folkermanrenewables.se/assets/folkerman-generated-hero.jpg">
     <title data-i18n="meta.title">Folkerman Renewables | Förnybar energi och industrisajter</title>
     <link rel="icon" href="./favicon.svg?v=20260522" type="image/svg+xml">
     <link rel="shortcut icon" href="./favicon.svg?v=20260522" type="image/svg+xml">
-    <link rel="preload" href="./assets/industry-renewables-hero.jpg?v=20260528" as="image">
-    <link rel="stylesheet" href="./styles.css?v=20260528-content">
+    <link rel="preload" href="./assets/folkerman-generated-hero.jpg?v=20260528-rune" as="image">
+    <link rel="stylesheet" href="./styles.css?v=20260528-rune">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -54,7 +54,7 @@
             "alternateName": ["Folkerman | renewables", "folkermanrenewables"],
             "url": "https://www.folkermanrenewables.se/",
             "logo": "https://www.folkermanrenewables.se/favicon.svg",
-            "image": "https://www.folkermanrenewables.se/assets/industry-renewables-hero.jpg",
+            "image": "https://www.folkermanrenewables.se/assets/folkerman-generated-hero.jpg",
             "telephone": "+46 73 755 81 82",
             "email": "maria@folkermanrenewables.se",
             "address": {
@@ -121,7 +121,7 @@
             "about": { "@id": "https://www.folkermanrenewables.se/#organization" },
             "primaryImageOfPage": {
               "@type": "ImageObject",
-              "url": "https://www.folkermanrenewables.se/assets/industry-renewables-hero.jpg"
+              "url": "https://www.folkermanrenewables.se/assets/folkerman-generated-hero.jpg"
             },
             "inLanguage": "sv"
           }
@@ -160,63 +160,84 @@
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow" data-i18n="hero.eyebrow">Folkerman | renewables</p>
-          <h1 id="hero-title" data-i18n="hero.title">
-            Vi utvecklar projekt där förnybar energi möter framtidens industri
-          </h1>
+        <img
+          class="hero-image"
+          src="./assets/folkerman-generated-hero.jpg?v=20260528-rune"
+          alt="Nordiskt landskap med skog, sjö, elnät, förnybar energi och modern industrisajt"
+          data-i18n-attr="alt:hero.imageAlt"
+        >
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow" data-i18n="hero.eyebrow">Folkerman | renewables</p>
+          <h1 id="hero-title" data-i18n="hero.title">Vi utvecklar projekt där förnybar energi möter framtidens industri</h1>
           <p class="hero-text" data-i18n="hero.text">
             Vi erbjuder konsulttjänster inom förnybar energi och utvecklar strategiska sajter för verksamheter med stora elbehov - exempelvis datacenter, förnybara bränslen, vätgas, batterier och annan industri kopplad till elektrifieringen.
           </p>
           <div class="hero-actions" aria-label="Huvudalternativ" data-i18n-attr="aria-label:hero.actionsAria">
             <a class="button primary" href="#contact" data-i18n="hero.primaryCta">Kontakta oss</a>
-            <a class="button secondary" href="#services" data-i18n="hero.secondaryCta">Se våra tjänster</a>
+            <a class="button ghost" href="#services" data-i18n="hero.secondaryCta">Se våra tjänster</a>
           </div>
         </div>
-        <figure class="hero-media">
-          <img
-            src="./assets/industry-renewables-hero.jpg?v=20260528"
-            alt="Collage med skog, vattenkraft, solceller, vindkraft, datacenter och elinfrastruktur"
-            data-i18n-attr="alt:hero.imageAlt"
-          >
-        </figure>
+        <div class="hero-panel" aria-label="Fokusområden" data-i18n-attr="aria-label:hero.panelAria">
+          <span data-i18n="hero.panel1">Mark</span>
+          <span data-i18n="hero.panel2">Elnät</span>
+          <span data-i18n="hero.panel3">Tillstånd</span>
+          <span data-i18n="hero.panel4">Industri</span>
+        </div>
       </section>
 
-      <section class="team-section" id="about" aria-labelledby="team-title">
-        <div class="section-heading">
+      <section class="metrics-strip" aria-label="Erfarenhet" data-i18n-attr="aria-label:metrics.aria">
+        <article>
+          <strong>18</strong>
+          <span data-i18n="metrics.karl">år teknisk energiutveckling</span>
+        </article>
+        <article>
+          <strong>24</strong>
+          <span data-i18n="metrics.maria">år ledning, juridik och projektutveckling</span>
+        </article>
+        <article>
+          <strong data-i18n="metrics.focusValue">SE</strong>
+          <span data-i18n="metrics.focus">förnybar energi och elintensiv industri</span>
+        </article>
+      </section>
+
+      <section class="section team-section" id="about" aria-labelledby="team-title">
+        <div class="section-kicker">
           <p class="eyebrow" data-i18n="team.eyebrow">Vilka är vi</p>
           <h2 id="team-title" data-i18n="team.title">Erfarenhet från teknik, tillstånd, mark och projektutveckling.</h2>
         </div>
         <div class="profile-grid">
           <article class="profile-card">
             <img class="profile-photo" src="./assets/karl-folkerman.jpg?v=20260528" alt="Karl Folkerman">
-            <div class="profile-header">
+            <div class="profile-body">
+              <p class="profile-role" data-i18n="team.karl.role">Teknisk planering / GIS</p>
               <h3>Karl Folkerman</h3>
-              <p data-i18n="team.karl.role">Teknisk planering / GIS</p>
+              <p data-i18n="team.karl.text">
+                Civilingenjör med 18 års erfarenhet av teknisk utveckling av energiprojekt. Arbetar med kartläggning, restriktionsanalyser, platsutvärdering, nätanslutning, GIS, korridorer, layout och genomförbarhet.
+              </p>
             </div>
-            <p class="profile-copy" data-i18n="team.karl.text">
-              Civilingenjör med 18 års erfarenhet av teknisk utveckling av energiprojekt. Arbetar med kartläggning, restriktionsanalyser, platsutvärdering, nätanslutning, GIS, korridorer, layout och genomförbarhet.
-            </p>
           </article>
 
           <article class="profile-card">
             <img class="profile-photo" src="./assets/maria-roske.jpg?v=20260528" alt="Maria Röske">
-            <div class="profile-header">
+            <div class="profile-body">
+              <p class="profile-role" data-i18n="team.maria.role">Tillstånd / Stakeholders / Avtal</p>
               <h3>Maria Röske</h3>
-              <p data-i18n="team.maria.role">Tillstånd / Stakeholders / Avtal</p>
+              <p data-i18n="team.maria.text">
+                Jurist med 24 års erfarenhet av företagsledning och operativ projektutveckling inom energi. Arbetar med strategi, markägare, kommuner, tillståndsfrågor och lokal förankring.
+              </p>
             </div>
-            <p class="profile-copy" data-i18n="team.maria.text">
-              Jurist med 24 års erfarenhet av företagsledning och operativ projektutveckling inom energi. Arbetar med strategi, markägare, kommuner, tillståndsfrågor och lokal förankring.
-            </p>
           </article>
         </div>
       </section>
 
-      <section class="statement" id="mission" aria-labelledby="mission-title">
-        <div class="statement-inner">
-          <p class="eyebrow" data-i18n="mission.eyebrow">Vår affärsidé</p>
-          <h2 id="mission-title" data-i18n="mission.title">Projektutveckling med mark, el och genomförbarhet i fokus</h2>
-          <div class="statement-copy">
+      <section class="mission-section" id="mission" aria-labelledby="mission-title">
+        <div class="mission-grid">
+          <div>
+            <p class="eyebrow" data-i18n="mission.eyebrow">Vår affärsidé</p>
+            <h2 id="mission-title" data-i18n="mission.title">Projektutveckling med mark, el och genomförbarhet i fokus</h2>
+          </div>
+          <div class="mission-copy">
             <p data-i18n="mission.text1">
               Den gröna omställningen kräver mer än produktion av förnybar el. Den kräver också rätt platser för ny industri, robust elinfrastruktur, lokal förankring och tillståndsprocesser som håller.
             </p>
@@ -230,58 +251,74 @@
         </div>
       </section>
 
-      <section class="focus-section" id="industry-sites" aria-labelledby="focus-title">
-        <div class="section-heading">
+      <section class="section focus-section" id="industry-sites" aria-labelledby="focus-title">
+        <div class="section-kicker">
           <p class="eyebrow" data-i18n="focus.eyebrow">Våra huvudområden</p>
           <h2 id="focus-title" data-i18n="focus.title">Två arbetsfält där mark, el och acceptans avgör potentialen.</h2>
         </div>
-        <div class="focus-grid">
-          <article class="focus-card">
-            <h3 data-i18n="focus.renewables.title">Förnybar kraft</h3>
-            <p data-i18n="focus.renewables.text">
-              Vi stödjer utveckling av vind-, sol- och energirelaterade projekt genom till exempel praktisk projektutveckling, tillståndsstrategi och kommersiell rådgivning.
-            </p>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <img src="./assets/folkerman-generated-grid.jpg?v=20260528-rune" alt="Elnät och förnybar kraft i nordiskt landskap" data-i18n-attr="alt:focus.renewables.imageAlt">
+            <div>
+              <p class="feature-label" data-i18n="focus.renewables.label">01 / Kraft</p>
+              <h3 data-i18n="focus.renewables.title">Förnybar kraft</h3>
+              <p data-i18n="focus.renewables.text">
+                Vi stödjer utveckling av vind-, sol- och energirelaterade projekt genom till exempel praktisk projektutveckling, tillståndsstrategi och kommersiell rådgivning.
+              </p>
+            </div>
           </article>
-          <article class="focus-card">
-            <h3 data-i18n="focus.industry.title">Elintensiv industri</h3>
-            <p data-i18n="focus.industry.text">
-              Vi identifierar och utvecklar platser för framtidens industri såsom datacenter, vätgas, förnybara bränslen för exempelvis flygtrafik, batterier och annan elintensiv verksamhet - där elkapacitet, mark, infrastruktur och kommunal förankring kan samlas i ett attraktivt etableringscase.
-            </p>
+
+          <article class="feature-card feature-card-dark">
+            <img src="./assets/folkerman-generated-campus.jpg?v=20260528-rune" alt="Modern industrisajt i skogsmiljö med elinfrastruktur" data-i18n-attr="alt:focus.industry.imageAlt">
+            <div>
+              <p class="feature-label" data-i18n="focus.industry.label">02 / Industri</p>
+              <h3 data-i18n="focus.industry.title">Elintensiv industri</h3>
+              <p data-i18n="focus.industry.text">
+                Vi identifierar och utvecklar platser för framtidens industri såsom datacenter, vätgas, förnybara bränslen för exempelvis flygtrafik, batterier och annan elintensiv verksamhet - där elkapacitet, mark, infrastruktur och kommunal förankring kan samlas i ett attraktivt etableringscase.
+              </p>
+            </div>
           </article>
         </div>
       </section>
 
       <section class="services-section" id="services" aria-labelledby="services-title">
-        <div class="section-heading">
+        <div class="section-kicker">
           <p class="eyebrow" data-i18n="services.eyebrow">Exempel på konsultuppdrag</p>
           <h2 id="services-title" data-i18n="services.title">Tjänster som driver projekt från möjlighet till beslutsunderlag.</h2>
         </div>
         <div class="service-grid">
           <article class="service-card">
+            <span>01</span>
             <h3 data-i18n="services.land.title">Mark och avtal</h3>
             <p data-i18n="services.land.text">Dialog med markägare, arrende, optionsavtal och markstrategi.</p>
           </article>
           <article class="service-card">
+            <span>02</span>
             <h3 data-i18n="services.management.title">Projektledning</h3>
             <p data-i18n="services.management.text">Struktur, tidplan och strategi.</p>
           </article>
           <article class="service-card">
+            <span>03</span>
             <h3 data-i18n="services.permits.title">Tillstånd och samråd</h3>
             <p data-i18n="services.permits.text">Tillståndsstrategi, samrådsprocesser, upphandling av inventerare, författande av tillståndsansökningar och myndighetsdialog.</p>
           </article>
           <article class="service-card">
+            <span>04</span>
             <h3 data-i18n="services.grid.title">Nätanslutning</h3>
             <p data-i18n="services.grid.text">Kontakt med nätägare, kapacitetsfrågor och anslutningsprocess.</p>
           </article>
           <article class="service-card">
+            <span>05</span>
             <h3 data-i18n="services.municipal.title">Kommunal dialog</h3>
             <p data-i18n="services.municipal.text">Underlag, möten och förankring.</p>
           </article>
           <article class="service-card">
+            <span>06</span>
             <h3 data-i18n="services.diligence.title">Due diligence</h3>
             <p data-i18n="services.diligence.text">Granskning av projekt, risker, avtal och genomförbarhet.</p>
           </article>
           <article class="service-card service-card-wide">
+            <span>07</span>
             <h3 data-i18n="services.wind.title">Vindoptimering</h3>
             <p data-i18n="services.wind.text">Skapande av layout med hänsyn till vindresurs, byggbarhet för kranplan, ljud och andra praktiska förutsättningar. Vi arbetar med GIS, Openwind och WindPRO, baserat på existerande vindresurskarta eller generisk modell.</p>
           </article>
@@ -289,7 +326,7 @@
       </section>
 
       <section class="process-section" id="process" aria-labelledby="process-title">
-        <div class="section-heading">
+        <div class="section-kicker">
           <p class="eyebrow" data-i18n="process.eyebrow">Så arbetar vi med projektering</p>
           <h2 id="process-title" data-i18n="process.title">En tydlig väg från screening till nästa fas.</h2>
         </div>
@@ -323,7 +360,7 @@
       </section>
 
       <section class="partners-section" id="partners" aria-labelledby="partners-title">
-        <div class="section-heading">
+        <div class="section-kicker">
           <p class="eyebrow" data-i18n="partners.eyebrow">Samarbetspartners</p>
           <h2 id="partners-title" data-i18n="partners.title">Ett nätverk kring energi, mark, datacenter, juridik och etableringar.</h2>
         </div>
@@ -344,7 +381,7 @@
       </section>
 
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="contact-intro">
+        <div>
           <p class="eyebrow" data-i18n="contact.eyebrow">Kontakt</p>
           <h2 id="contact-title">Folkerman | renewables</h2>
           <p class="contact-copy" data-i18n="contact.text">
@@ -408,7 +445,19 @@
             primaryCta: "Kontakta oss",
             secondaryCta: "Se våra tjänster",
             actionsAria: "Huvudalternativ",
-            imageAlt: "Collage med skog, vattenkraft, solceller, vindkraft, datacenter och elinfrastruktur"
+            panelAria: "Fokusområden",
+            panel1: "Mark",
+            panel2: "Elnät",
+            panel3: "Tillstånd",
+            panel4: "Industri",
+            imageAlt: "Nordiskt landskap med skog, sjö, elnät, förnybar energi och modern industrisajt"
+          },
+          metrics: {
+            aria: "Erfarenhet",
+            karl: "år teknisk energiutveckling",
+            maria: "år ledning, juridik och projektutveckling",
+            focusValue: "SE",
+            focus: "förnybar energi och elintensiv industri"
           },
           team: {
             eyebrow: "Vilka är vi",
@@ -438,44 +487,33 @@
             eyebrow: "Våra huvudområden",
             title: "Två arbetsfält där mark, el och acceptans avgör potentialen.",
             renewables: {
+              label: "01 / Kraft",
               title: "Förnybar kraft",
               text:
-                "Vi stödjer utveckling av vind-, sol- och energirelaterade projekt genom till exempel praktisk projektutveckling, tillståndsstrategi och kommersiell rådgivning."
+                "Vi stödjer utveckling av vind-, sol- och energirelaterade projekt genom till exempel praktisk projektutveckling, tillståndsstrategi och kommersiell rådgivning.",
+              imageAlt: "Elnät och förnybar kraft i nordiskt landskap"
             },
             industry: {
+              label: "02 / Industri",
               title: "Elintensiv industri",
               text:
-                "Vi identifierar och utvecklar platser för framtidens industri såsom datacenter, vätgas, förnybara bränslen för exempelvis flygtrafik, batterier och annan elintensiv verksamhet - där elkapacitet, mark, infrastruktur och kommunal förankring kan samlas i ett attraktivt etableringscase."
+                "Vi identifierar och utvecklar platser för framtidens industri såsom datacenter, vätgas, förnybara bränslen för exempelvis flygtrafik, batterier och annan elintensiv verksamhet - där elkapacitet, mark, infrastruktur och kommunal förankring kan samlas i ett attraktivt etableringscase.",
+              imageAlt: "Modern industrisajt i skogsmiljö med elinfrastruktur"
             }
           },
           services: {
             eyebrow: "Exempel på konsultuppdrag",
             title: "Tjänster som driver projekt från möjlighet till beslutsunderlag.",
-            land: {
-              title: "Mark och avtal",
-              text: "Dialog med markägare, arrende, optionsavtal och markstrategi."
-            },
-            management: {
-              title: "Projektledning",
-              text: "Struktur, tidplan och strategi."
-            },
+            land: { title: "Mark och avtal", text: "Dialog med markägare, arrende, optionsavtal och markstrategi." },
+            management: { title: "Projektledning", text: "Struktur, tidplan och strategi." },
             permits: {
               title: "Tillstånd och samråd",
               text:
                 "Tillståndsstrategi, samrådsprocesser, upphandling av inventerare, författande av tillståndsansökningar och myndighetsdialog."
             },
-            grid: {
-              title: "Nätanslutning",
-              text: "Kontakt med nätägare, kapacitetsfrågor och anslutningsprocess."
-            },
-            municipal: {
-              title: "Kommunal dialog",
-              text: "Underlag, möten och förankring."
-            },
-            diligence: {
-              title: "Due diligence",
-              text: "Granskning av projekt, risker, avtal och genomförbarhet."
-            },
+            grid: { title: "Nätanslutning", text: "Kontakt med nätägare, kapacitetsfrågor och anslutningsprocess." },
+            municipal: { title: "Kommunal dialog", text: "Underlag, möten och förankring." },
+            diligence: { title: "Due diligence", text: "Granskning av projekt, risker, avtal och genomförbarhet." },
             wind: {
               title: "Vindoptimering",
               text:
@@ -485,26 +523,11 @@
           process: {
             eyebrow: "Så arbetar vi med projektering",
             title: "En tydlig väg från screening till nästa fas.",
-            step1: {
-              title: "Screening",
-              text: "Vi analyserar geografi, elnät, mark, infrastruktur, planförhållanden och möjliga begränsningar."
-            },
-            step2: {
-              title: "Förankring",
-              text: "Vi för dialog med markägare, kommun, nätägare och andra relevanta aktörer."
-            },
-            step3: {
-              title: "Riskreducering",
-              text: "Vi utreder tekniska, miljömässiga, tillståndsmässiga och kommersiella frågor."
-            },
-            step4: {
-              title: "Paketering",
-              text: "Vi tar fram ett tydligt beslutsunderlag för investerare, projektägare eller industriella aktörer."
-            },
-            step5: {
-              title: "Nästa fas",
-              text: "Vi stöttar vidare genom tillståndsprocesserna, kommunal process, nätprocess, förhandling och transaktion."
-            }
+            step1: { title: "Screening", text: "Vi analyserar geografi, elnät, mark, infrastruktur, planförhållanden och möjliga begränsningar." },
+            step2: { title: "Förankring", text: "Vi för dialog med markägare, kommun, nätägare och andra relevanta aktörer." },
+            step3: { title: "Riskreducering", text: "Vi utreder tekniska, miljömässiga, tillståndsmässiga och kommersiella frågor." },
+            step4: { title: "Paketering", text: "Vi tar fram ett tydligt beslutsunderlag för investerare, projektägare eller industriella aktörer." },
+            step5: { title: "Nästa fas", text: "Vi stöttar vidare genom tillståndsprocesserna, kommunal process, nätprocess, förhandling och transaktion." }
           },
           partners: {
             eyebrow: "Samarbetspartners",
@@ -551,7 +574,19 @@
             primaryCta: "Contact us",
             secondaryCta: "View services",
             actionsAria: "Primary actions",
-            imageAlt: "Collage with forest, hydropower, solar panels, wind power, data centers and power infrastructure"
+            panelAria: "Focus areas",
+            panel1: "Land",
+            panel2: "Grid",
+            panel3: "Permits",
+            panel4: "Industry",
+            imageAlt: "Nordic landscape with forest, lake, grid infrastructure, renewable energy and modern industrial site"
+          },
+          metrics: {
+            aria: "Experience",
+            karl: "years of technical energy development",
+            maria: "years of leadership, legal and project development",
+            focusValue: "SE",
+            focus: "renewable energy and power-intensive industry"
           },
           team: {
             eyebrow: "Who we are",
@@ -581,44 +616,33 @@
             eyebrow: "Main areas",
             title: "Two fields where land, power and acceptance decide the potential.",
             renewables: {
+              label: "01 / Power",
               title: "Renewable power",
               text:
-                "We support the development of wind, solar and energy-related projects through practical project development, permitting strategy and commercial advisory."
+                "We support the development of wind, solar and energy-related projects through practical project development, permitting strategy and commercial advisory.",
+              imageAlt: "Electricity grid and renewable power in a Nordic landscape"
             },
             industry: {
+              label: "02 / Industry",
               title: "Power-intensive industry",
               text:
-                "We identify and develop sites for the industry of the future, such as data centers, hydrogen, renewable fuels for aviation, batteries and other power-intensive operations - where grid capacity, land, infrastructure and municipal anchoring can form an attractive establishment case."
+                "We identify and develop sites for the industry of the future, such as data centers, hydrogen, renewable fuels for aviation, batteries and other power-intensive operations - where grid capacity, land, infrastructure and municipal anchoring can form an attractive establishment case.",
+              imageAlt: "Modern industrial site in forest landscape with power infrastructure"
             }
           },
           services: {
             eyebrow: "Examples of advisory assignments",
             title: "Services that move projects from opportunity to decision material.",
-            land: {
-              title: "Land and agreements",
-              text: "Landowner dialogue, leases, option agreements and land strategy."
-            },
-            management: {
-              title: "Project management",
-              text: "Structure, timeline and strategy."
-            },
+            land: { title: "Land and agreements", text: "Landowner dialogue, leases, option agreements and land strategy." },
+            management: { title: "Project management", text: "Structure, timeline and strategy." },
             permits: {
               title: "Permitting and consultation",
               text:
                 "Permitting strategy, consultation processes, procurement of survey specialists, drafting of permit applications and authority dialogue."
             },
-            grid: {
-              title: "Grid connection",
-              text: "Contact with grid owners, capacity questions and connection processes."
-            },
-            municipal: {
-              title: "Municipal dialogue",
-              text: "Decision material, meetings and anchoring."
-            },
-            diligence: {
-              title: "Due diligence",
-              text: "Review of projects, risks, agreements and feasibility."
-            },
+            grid: { title: "Grid connection", text: "Contact with grid owners, capacity questions and connection processes." },
+            municipal: { title: "Municipal dialogue", text: "Decision material, meetings and anchoring." },
+            diligence: { title: "Due diligence", text: "Review of projects, risks, agreements and feasibility." },
             wind: {
               title: "Wind optimization",
               text:
@@ -628,26 +652,11 @@
           process: {
             eyebrow: "How we work with project development",
             title: "A clear path from screening to the next phase.",
-            step1: {
-              title: "Screening",
-              text: "We analyze geography, grid, land, infrastructure, planning conditions and possible constraints."
-            },
-            step2: {
-              title: "Anchoring",
-              text: "We conduct dialogue with landowners, municipalities, grid owners and other relevant stakeholders."
-            },
-            step3: {
-              title: "Risk reduction",
-              text: "We investigate technical, environmental, permitting and commercial questions."
-            },
-            step4: {
-              title: "Packaging",
-              text: "We prepare clear decision material for investors, project owners or industrial actors."
-            },
-            step5: {
-              title: "Next phase",
-              text: "We support the work through permitting, municipal processes, grid processes, negotiation and transaction."
-            }
+            step1: { title: "Screening", text: "We analyze geography, grid, land, infrastructure, planning conditions and possible constraints." },
+            step2: { title: "Anchoring", text: "We conduct dialogue with landowners, municipalities, grid owners and other relevant stakeholders." },
+            step3: { title: "Risk reduction", text: "We investigate technical, environmental, permitting and commercial questions." },
+            step4: { title: "Packaging", text: "We prepare clear decision material for investors, project owners or industrial actors." },
+            step5: { title: "Next phase", text: "We support the work through permitting, municipal processes, grid processes, negotiation and transaction." }
           },
           partners: {
             eyebrow: "Partners",
