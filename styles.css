@@ -506,10 +506,11 @@ h3 {
   min-height: 176px;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 28px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--white);
+  box-shadow: 0 12px 30px rgba(21, 51, 30, 0.06);
   transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
 }
 
@@ -521,17 +522,20 @@ h3 {
 
 .partner-card img {
   width: 100%;
-  max-width: 230px;
-  max-height: 112px;
+  max-width: 210px;
+  max-height: 104px;
   object-fit: contain;
+  image-rendering: auto;
 }
 
 .partner-card-tall img {
+  max-width: 132px;
   max-height: 148px;
 }
 
-.partner-card-dark {
-  background: #050505;
+.partner-card-wide-logo img {
+  max-width: 250px;
+  max-height: 112px;
 }
 
 .contact-section {
