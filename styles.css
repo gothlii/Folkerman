@@ -309,8 +309,9 @@ h3 {
 
 .metrics-strip article {
   display: grid;
-  gap: 10px;
-  min-height: 180px;
+  align-content: start;
+  gap: 18px;
+  min-height: 320px;
   padding: clamp(28px, 5vw, 52px);
   border-right: 1px solid rgba(255, 255, 255, 0.08);
   color: var(--white);
@@ -320,17 +321,21 @@ h3 {
   border-right: 0;
 }
 
-.metrics-strip strong {
+.metrics-strip h2 {
+  max-width: 360px;
+  margin-bottom: 0;
   color: var(--leaf);
-  font-size: clamp(3rem, 6vw, 6.4rem);
-  line-height: 0.85;
+  font-size: clamp(2rem, 3.2vw, 3.35rem);
+  line-height: 0.96;
 }
 
-.metrics-strip span {
-  max-width: 260px;
+.metrics-strip p {
+  max-width: 420px;
+  margin-bottom: 0;
   color: rgba(255, 255, 255, 0.72);
-  font-weight: 720;
-  line-height: 1.4;
+  font-size: clamp(0.98rem, 1.15vw, 1.08rem);
+  font-weight: 560;
+  line-height: 1.62;
 }
 
 .section,
@@ -767,7 +772,7 @@ h3 {
   }
 
   .metrics-strip article {
-    min-height: 140px;
+    min-height: auto;
     border-right: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
