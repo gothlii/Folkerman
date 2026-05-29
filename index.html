@@ -42,7 +42,7 @@
     <link rel="icon" href="./favicon.svg?v=20260522" type="image/svg+xml">
     <link rel="shortcut icon" href="./favicon.svg?v=20260522" type="image/svg+xml">
     <link rel="preload" href="./assets/folkerman-generated-hero.jpg?v=20260528-rune" as="image">
-    <link rel="stylesheet" href="./styles.css?v=20260528-rune">
+    <link rel="stylesheet" href="./styles.css?v=20260529-compute">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -143,12 +143,11 @@
 
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Folkerman renewables start">
-        <span class="brand-main">Folkerman</span>
-        <span class="brand-divider">|</span>
-        <span class="brand-sub">renewables</span>
+        <img class="brand-image" src="./assets/folkerman-logo2.png?v=20260529" alt="Folkerman renewables">
       </a>
       <nav class="site-nav" aria-label="Primär navigering" data-i18n-attr="aria-label:nav.aria">
         <a href="#about" data-i18n="nav.about">Om oss</a>
+        <a href="#compute" data-i18n="nav.compute">Datakraft</a>
         <a href="#mission" data-i18n="nav.mission">Affärsidé</a>
         <a href="#industry-sites" data-i18n="nav.industry">Industrisajter</a>
         <a href="#services" data-i18n="nav.services">Tjänster</a>
@@ -234,6 +233,25 @@
               </p>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section class="compute-section" id="compute" aria-labelledby="compute-title">
+        <img
+          class="compute-image"
+          src="./assets/compute-capacity-europe.jpg?v=20260529"
+          alt="Grön visualisering av Europas digitala infrastruktur och datakapacitet"
+          data-i18n-attr="alt:compute.imageAlt"
+        >
+        <div class="compute-overlay"></div>
+        <div class="compute-content">
+          <p class="eyebrow" data-i18n="compute.eyebrow">Datakraft</p>
+          <h2 id="compute-title" data-i18n="compute.title">Beräkningskapacitet är kritisk infrastruktur</h2>
+          <ul class="compute-list">
+            <li data-i18n="compute.point1">AI, industri och offentlig sektor blir allt mer beroende av säker och tillförlitlig beräkningskapacitet.</li>
+            <li data-i18n="compute.point2">I en mer volatil värld behöver Europa stärkt resiliens: redundans, kontinuitet och strategisk kapacitet.</li>
+            <li data-i18n="compute.point3">Vi vill bidra till att bygga Europas datakraft genom att frigöra platser där projekt faktiskt kan bli av.</li>
+          </ul>
         </div>
       </section>
 
@@ -389,7 +407,9 @@
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <div>
           <p class="eyebrow" data-i18n="contact.eyebrow">Kontakt</p>
-          <h2 id="contact-title">Folkerman | renewables</h2>
+          <h2 class="brand-lockup contact-logo" id="contact-title" aria-label="Folkerman renewables">
+            <img class="brand-image" src="./assets/folkerman-logo2.png?v=20260529" alt="Folkerman renewables">
+          </h2>
           <p class="contact-copy" data-i18n="contact.text">
             Hör av dig om markmöjligheter, kommunal dialog, tekniska frågor eller projektutveckling inom förnybar energi och elintensiv industri.
           </p>
@@ -436,6 +456,7 @@
           nav: {
             aria: "Primär navigering",
             about: "Om oss",
+            compute: "Datakraft",
             mission: "Affärsidé",
             industry: "Industrisajter",
             services: "Tjänster",
@@ -486,6 +507,17 @@
               text:
                 "Jurist med 24 års erfarenhet av företagsledning och operativ projektutveckling inom energi. Arbetar med strategi, markägare, kommuner, tillståndsfrågor och lokal förankring."
             }
+          },
+          compute: {
+            eyebrow: "Datakraft",
+            title: "Beräkningskapacitet är kritisk infrastruktur",
+            point1:
+              "AI, industri och offentlig sektor blir allt mer beroende av säker och tillförlitlig beräkningskapacitet.",
+            point2:
+              "I en mer volatil värld behöver Europa stärkt resiliens: redundans, kontinuitet och strategisk kapacitet.",
+            point3:
+              "Vi vill bidra till att bygga Europas datakraft genom att frigöra platser där projekt faktiskt kan bli av.",
+            imageAlt: "Grön visualisering av Europas digitala infrastruktur och datakapacitet"
           },
           mission: {
             eyebrow: "Vår affärsidé",
@@ -573,6 +605,7 @@
           nav: {
             aria: "Primary navigation",
             about: "About",
+            compute: "Data power",
             mission: "Business idea",
             industry: "Industrial sites",
             services: "Services",
@@ -623,6 +656,17 @@
               text:
                 "Lawyer with 24 years of experience in company management and operational project development within energy. Works with strategy, landowners, municipalities, permitting and local anchoring."
             }
+          },
+          compute: {
+            eyebrow: "Data power",
+            title: "Compute capacity is critical infrastructure",
+            point1:
+              "AI, industry and the public sector are increasingly dependent on secure and reliable compute capacity.",
+            point2:
+              "In a more volatile world, Europe needs stronger resilience: redundancy, continuity and strategic capacity.",
+            point3:
+              "We want to help build Europe's data power by unlocking sites where projects can actually be realized.",
+            imageAlt: "Green visualization of Europe's digital infrastructure and data capacity"
           },
           mission: {
             eyebrow: "Our business idea",

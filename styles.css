@@ -12,6 +12,9 @@
   --white: #ffffff;
   --silver: #c9d2c7;
   --shadow: 0 26px 70px rgba(7, 17, 12, 0.18);
+  --logo-dark: #5b873f;
+  --logo-light: #a8d08d;
+  --logo-divider: #050505;
 }
 
 * {
@@ -106,29 +109,40 @@ p {
 
 .brand {
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   gap: 7px;
   text-decoration: none;
   white-space: nowrap;
 }
 
+.brand-image {
+  width: clamp(220px, 25vw, 300px);
+  height: auto;
+}
+
 .brand-main {
-  color: #eff6eb;
+  color: var(--logo-dark);
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.3rem, 2.3vw, 1.85rem);
   font-weight: 700;
 }
 
 .brand-divider {
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--logo-divider);
   font-size: clamp(1.2rem, 2vw, 1.7rem);
   font-weight: 800;
 }
 
 .brand-sub {
-  color: var(--leaf);
+  color: var(--logo-light);
   font-size: clamp(1.22rem, 2vw, 1.72rem);
   font-weight: 650;
+}
+
+.brand-lockup {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
 }
 
 .site-nav {
@@ -364,6 +378,7 @@ h3 {
 .process-section,
 .partners-section,
 .contact-section,
+.compute-section,
 .mission-section {
   scroll-margin-top: 110px;
 }
@@ -440,6 +455,85 @@ h3 {
 .profile-body p:not(.profile-role) {
   margin-bottom: 0;
   font-weight: 560;
+}
+
+.compute-section {
+  position: relative;
+  min-height: 620px;
+  overflow: hidden;
+  color: var(--white);
+  background: var(--deep);
+}
+
+.compute-image,
+.compute-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.compute-image {
+  object-fit: cover;
+}
+
+.compute-overlay {
+  background:
+    linear-gradient(90deg, rgba(7, 17, 12, 0.88) 0%, rgba(7, 17, 12, 0.66) 48%, rgba(7, 17, 12, 0.28) 100%),
+    linear-gradient(0deg, rgba(7, 17, 12, 0.82) 0%, rgba(7, 17, 12, 0.12) 52%, rgba(7, 17, 12, 0.48) 100%);
+}
+
+.compute-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-content: center;
+  min-height: inherit;
+  width: min(100% - 48px, 1240px);
+  margin: 0 auto;
+  padding: clamp(84px, 10vw, 132px) 0;
+}
+
+.compute-section .eyebrow {
+  color: var(--logo-light);
+}
+
+.compute-section h2 {
+  max-width: 820px;
+  color: var(--white);
+  font-size: clamp(2.55rem, 5.8vw, 6.2rem);
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+.compute-list {
+  display: grid;
+  gap: 16px;
+  max-width: 760px;
+  margin: clamp(28px, 4vw, 44px) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.compute-list li {
+  position: relative;
+  padding-left: 28px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(1.02rem, 1.5vw, 1.18rem);
+  font-weight: 620;
+  line-height: 1.58;
+}
+
+.compute-list li::before {
+  position: absolute;
+  top: 0.68em;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  content: "";
+  background: var(--logo-light);
+  box-shadow: 0 0 18px rgba(168, 208, 141, 0.8);
 }
 
 .mission-section {
@@ -631,6 +725,14 @@ h3 {
   color: var(--white);
 }
 
+.contact-logo {
+  color: inherit;
+}
+
+.contact-logo .brand-image {
+  width: min(100%, 460px);
+}
+
 .contact-section .eyebrow {
   color: var(--leaf);
 }
@@ -725,6 +827,10 @@ h3 {
     grid-template-columns: 132px 1fr;
   }
 
+  .compute-section {
+    min-height: auto;
+  }
+
   .service-grid,
   .partner-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -747,6 +853,10 @@ h3 {
     top: 10px;
     width: min(100% - 24px, 1240px);
     padding-right: 74px;
+  }
+
+  .brand-image {
+    width: min(100%, 238px);
   }
 
   .site-nav {
@@ -808,6 +918,15 @@ h3 {
   .profile-photo {
     width: 112px;
     height: 112px;
+  }
+
+  .compute-content {
+    width: min(100% - 32px, 1240px);
+    padding: 78px 0;
+  }
+
+  .compute-section h2 {
+    font-size: clamp(2rem, 10vw, 3.45rem);
   }
 
   .feature-card {
