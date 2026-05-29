@@ -309,9 +309,8 @@ h3 {
 
 .metrics-strip article {
   display: grid;
-  align-content: start;
-  gap: 18px;
-  min-height: 320px;
+  align-content: center;
+  min-height: 220px;
   padding: clamp(28px, 5vw, 52px);
   border-right: 1px solid rgba(255, 255, 255, 0.08);
   color: var(--white);
@@ -321,21 +320,22 @@ h3 {
   border-right: 0;
 }
 
-.metrics-strip h2 {
+.metrics-strip a {
+  display: inline-flex;
+  width: fit-content;
   max-width: 360px;
-  margin-bottom: 0;
   color: var(--leaf);
   font-size: clamp(2rem, 3.2vw, 3.35rem);
+  font-weight: 800;
+  letter-spacing: 0;
   line-height: 0.96;
+  text-decoration: none;
+  transition: color 160ms ease, transform 160ms ease;
 }
 
-.metrics-strip p {
-  max-width: 420px;
-  margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: clamp(0.98rem, 1.15vw, 1.08rem);
-  font-weight: 560;
-  line-height: 1.62;
+.metrics-strip a:hover {
+  color: var(--white);
+  transform: translateY(-2px);
 }
 
 .section,
