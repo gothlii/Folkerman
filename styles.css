@@ -321,16 +321,28 @@ h3 {
 }
 
 .metrics-strip a {
-  display: inline-flex;
+  display: grid;
+  gap: 8px;
   width: fit-content;
   max-width: 360px;
   color: var(--leaf);
+  text-decoration: none;
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.metrics-strip a span {
+  color: var(--leaf);
+  font-size: 0.86rem;
+  font-weight: 850;
+  line-height: 1;
+}
+
+.metrics-strip a strong {
+  color: inherit;
   font-size: clamp(2rem, 3.2vw, 3.35rem);
   font-weight: 800;
   letter-spacing: 0;
   line-height: 0.96;
-  text-decoration: none;
-  transition: color 160ms ease, transform 160ms ease;
 }
 
 .metrics-strip a:hover {
