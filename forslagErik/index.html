@@ -42,7 +42,7 @@
     <link rel="icon" href="../favicon.svg?v=20260522" type="image/svg+xml">
     <link rel="shortcut icon" href="../favicon.svg?v=20260522" type="image/svg+xml">
     <link rel="preload" href="../assets/folkerman-generated-hero.jpg?v=20260528-rune" as="image">
-    <link rel="stylesheet" href="./styles.css?v=20260529-compute-ux">
+    <link rel="stylesheet" href="./styles.css?v=20260529-erik-flow">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -70,7 +70,7 @@
             ],
             "knowsAbout": [
               "Förnybar energi",
-              "Industrisajter",
+              "Huvudområden",
               "Datacenter",
               "Vätgas",
               "Förnybara bränslen",
@@ -147,11 +147,11 @@
       </a>
       <nav class="site-nav" aria-label="Primär navigering" data-i18n-attr="aria-label:nav.aria">
         <a href="#about" data-i18n="nav.about">Om oss</a>
-        <a href="#compute" data-i18n="nav.compute">Datakraft</a>
         <a href="#mission" data-i18n="nav.mission">Affärsidé</a>
-        <a href="#industry-sites" data-i18n="nav.industry">Industrisajter</a>
-        <a href="#services" data-i18n="nav.services">Tjänster</a>
+        <a href="#industry-sites" data-i18n="nav.industry">Huvudområden</a>
+        <a href="#compute" data-i18n="nav.compute">Datakraft</a>
         <a href="#process" data-i18n="nav.process">Process</a>
+        <a href="#services" data-i18n="nav.services">Tjänster</a>
         <a href="#partners" data-i18n="nav.partners">Partners</a>
         <a href="#contact" data-i18n="nav.contact">Kontakt</a>
       </nav>
@@ -196,7 +196,7 @@
           </a>
         </article>
         <article>
-          <a href="#services">
+          <a href="#process">
             <span data-i18n="metrics.feasibility.label">Resultat</span>
             <strong data-i18n="metrics.feasibility.title">Genomförbarhet →</strong>
           </a>
@@ -244,31 +244,11 @@
         </div>
       </section>
 
-      <section class="compute-section compute-section-ux" id="compute" aria-labelledby="compute-title">
-        <img
-          class="compute-image"
-          src="../assets/compute-capacity-europe.jpg?v=20260529"
-          alt="Grön visualisering av Europas digitala infrastruktur och datakapacitet"
-          data-i18n-attr="alt:compute.imageAlt"
-        >
-        <div class="compute-overlay"></div>
-        <div class="compute-content">
-          <p class="eyebrow" data-i18n="compute.eyebrow">Datakraft</p>
-          <h2 id="compute-title" data-i18n="compute.title">Beräkningskapacitet är kritisk infrastruktur</h2>
-          <p class="compute-lead" data-i18n="compute.lead">Datacenter och elintensiv industri kräver platser där el, mark, nät och lokal förankring samverkar.</p>
-          <ul class="compute-list">
-            <li data-i18n="compute.point1">AI, industri och offentlig sektor blir allt mer beroende av säker och tillförlitlig beräkningskapacitet.</li>
-            <li data-i18n="compute.point2">I en mer volatil värld behöver Europa stärkt resiliens: redundans, kontinuitet och strategisk kapacitet.</li>
-            <li data-i18n="compute.point3">Vi vill bidra till att bygga Europas datakraft genom att frigöra platser där projekt faktiskt kan bli av.</li>
-          </ul>
-        </div>
-      </section>
-
       <section class="mission-section" id="mission" aria-labelledby="mission-title">
         <div class="mission-grid">
           <div>
             <p class="eyebrow" data-i18n="mission.eyebrow">Vår affärsidé</p>
-          <h2 id="mission-title" data-i18n="mission.title">Projektutveckling med mark, el och genomförbarhet.</h2>
+            <h2 id="mission-title" data-i18n="mission.title">Projektutveckling med mark, el och genomförbarhet.</h2>
           </div>
           <div class="mission-copy">
             <p data-i18n="mission.text1">
@@ -310,6 +290,62 @@
                 Vi identifierar och utvecklar platser för framtidens industri såsom datacenter, vätgas, förnybara bränslen för exempelvis flygtrafik, batterier och annan elintensiv verksamhet - där elkapacitet, mark, infrastruktur och kommunal förankring kan samlas i ett attraktivt etableringscase.
               </p>
             </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="compute-section compute-section-ux" id="compute" aria-labelledby="compute-title">
+        <img
+          class="compute-image"
+          src="../assets/compute-capacity-europe.jpg?v=20260529"
+          alt="Grön visualisering av Europas digitala infrastruktur och datakapacitet"
+          data-i18n-attr="alt:compute.imageAlt"
+        >
+        <div class="compute-overlay"></div>
+        <div class="compute-content">
+          <div class="compute-heading">
+            <p class="eyebrow" data-i18n="compute.eyebrow">Datakraft</p>
+            <h2 id="compute-title" data-i18n="compute.title">Datakraft börjar med rätt plats.</h2>
+            <p class="compute-lead" data-i18n="compute.lead">För elintensiva etableringar räcker det inte med behovet. Platsen måste bära elkapacitet, mark, nät, infrastruktur och lokal acceptans.</p>
+          </div>
+          <ul class="compute-list">
+            <li data-i18n="compute.point1">Vi kopplar industriella elbehov till konkreta etableringslägen.</li>
+            <li data-i18n="compute.point2">Vi bedömer förutsättningarna tidigt: nät, mark, tillstånd, infrastruktur och genomförbarhet.</li>
+            <li data-i18n="compute.point3">Målet är platser där projekt kan gå från idé till robust beslutsunderlag.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="process-section" id="process" aria-labelledby="process-title">
+        <div class="section-kicker">
+          <p class="eyebrow" data-i18n="process.eyebrow">Så arbetar vi med projektering</p>
+          <h2 id="process-title" data-i18n="process.title">Så tar vi projektet vidare.</h2>
+        </div>
+        <div class="process-list">
+          <article>
+            <span>01</span>
+            <h3 data-i18n="process.step1.title">Screening</h3>
+            <p data-i18n="process.step1.text">Vi analyserar geografi, elnät, mark, infrastruktur, planförhållanden och möjliga begränsningar.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3 data-i18n="process.step2.title">Förankring</h3>
+            <p data-i18n="process.step2.text">Vi för dialog med markägare, kommun, nätägare och andra relevanta aktörer.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3 data-i18n="process.step3.title">Riskreducering</h3>
+            <p data-i18n="process.step3.text">Vi utreder tekniska, miljömässiga, tillståndsmässiga och kommersiella frågor.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3 data-i18n="process.step4.title">Paketering</h3>
+            <p data-i18n="process.step4.text">Vi tar fram ett tydligt beslutsunderlag för investerare, projektägare eller industriella aktörer.</p>
+          </article>
+          <article>
+            <span>05</span>
+            <h3 data-i18n="process.step5.title">Nästa fas</h3>
+            <p data-i18n="process.step5.text">Vi stöttar vidare genom tillståndsprocesserna, kommunal process, nätprocess, förhandling och transaktion.</p>
           </article>
         </div>
       </section>
@@ -371,40 +407,6 @@
                 <p data-i18n="services.wind.text">Skapande av layout med hänsyn till vindresurs, byggbarhet för kranplan, ljud och andra praktiska förutsättningar. Vi arbetar med GIS, Openwind och WindPRO, baserat på existerande vindresurskarta eller generisk modell.</p>
               </article>
             </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="process-section" id="process" aria-labelledby="process-title">
-        <div class="section-kicker">
-          <p class="eyebrow" data-i18n="process.eyebrow">Så arbetar vi med projektering</p>
-          <h2 id="process-title" data-i18n="process.title">Så tar vi projektet vidare.</h2>
-        </div>
-        <div class="process-list">
-          <article>
-            <span>01</span>
-            <h3 data-i18n="process.step1.title">Screening</h3>
-            <p data-i18n="process.step1.text">Vi analyserar geografi, elnät, mark, infrastruktur, planförhållanden och möjliga begränsningar.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3 data-i18n="process.step2.title">Förankring</h3>
-            <p data-i18n="process.step2.text">Vi för dialog med markägare, kommun, nätägare och andra relevanta aktörer.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3 data-i18n="process.step3.title">Riskreducering</h3>
-            <p data-i18n="process.step3.text">Vi utreder tekniska, miljömässiga, tillståndsmässiga och kommersiella frågor.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3 data-i18n="process.step4.title">Paketering</h3>
-            <p data-i18n="process.step4.text">Vi tar fram ett tydligt beslutsunderlag för investerare, projektägare eller industriella aktörer.</p>
-          </article>
-          <article>
-            <span>05</span>
-            <h3 data-i18n="process.step5.title">Nästa fas</h3>
-            <p data-i18n="process.step5.text">Vi stöttar vidare genom tillståndsprocesserna, kommunal process, nätprocess, förhandling och transaktion.</p>
           </article>
         </div>
       </section>
@@ -482,7 +484,7 @@
             about: "Om oss",
             compute: "Datakraft",
             mission: "Affärsidé",
-            industry: "Industrisajter",
+            industry: "Huvudområden",
             services: "Tjänster",
             process: "Process",
             partners: "Partners",
@@ -538,14 +540,14 @@
           },
           compute: {
             eyebrow: "Datakraft",
-            title: "Beräkningskapacitet är kritisk infrastruktur",
-            lead: "Datacenter och elintensiv industri kräver platser där el, mark, nät och lokal förankring samverkar.",
+            title: "Datakraft börjar med rätt plats.",
+            lead: "För elintensiva etableringar räcker det inte med behovet. Platsen måste bära elkapacitet, mark, nät, infrastruktur och lokal acceptans.",
             point1:
-              "AI, industri och offentlig sektor blir allt mer beroende av säker och tillförlitlig beräkningskapacitet.",
+              "Vi kopplar industriella elbehov till konkreta etableringslägen.",
             point2:
-              "I en mer volatil värld behöver Europa stärkt resiliens: redundans, kontinuitet och strategisk kapacitet.",
+              "Vi bedömer förutsättningarna tidigt: nät, mark, tillstånd, infrastruktur och genomförbarhet.",
             point3:
-              "Vi vill bidra till att bygga Europas datakraft genom att frigöra platser där projekt faktiskt kan bli av.",
+              "Målet är platser där projekt kan gå från idé till robust beslutsunderlag.",
             imageAlt: "Grön visualisering av Europas digitala infrastruktur och datakapacitet"
           },
           mission: {
@@ -640,7 +642,7 @@
             about: "About",
             compute: "Data power",
             mission: "Business idea",
-            industry: "Industrial sites",
+            industry: "Main areas",
             services: "Services",
             process: "Process",
             partners: "Partners",
@@ -696,14 +698,14 @@
           },
           compute: {
             eyebrow: "Data power",
-            title: "Compute capacity is critical infrastructure",
-            lead: "Data centers and power-intensive industry require sites where power, land, grid and local anchoring work together.",
+            title: "Data power starts with the right site.",
+            lead: "For power-intensive establishments, demand is not enough. The site must carry grid capacity, land, infrastructure and local acceptance.",
             point1:
-              "AI, industry and the public sector are increasingly dependent on secure and reliable compute capacity.",
+              "We connect industrial power needs to concrete establishment locations.",
             point2:
-              "In a more volatile world, Europe needs stronger resilience: redundancy, continuity and strategic capacity.",
+              "We assess the conditions early: grid, land, permitting, infrastructure and feasibility.",
             point3:
-              "We want to help build Europe's data power by unlocking sites where projects can actually be realized.",
+              "The goal is sites where projects can move from idea to robust decision material.",
             imageAlt: "Green visualization of Europe's digital infrastructure and data capacity"
           },
           mission: {
